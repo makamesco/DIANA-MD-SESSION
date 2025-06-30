@@ -13,7 +13,7 @@ function removeFile(FilePath) {
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-    async function DIGITEX_MD_PAIR_CODE() {
+    async function Diana_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -75,7 +75,7 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "DIGITEX~" + string_session;
+                        let md = "Diana~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hello there User!* 
 
@@ -83,19 +83,19 @@ var randomItem = selectRandomItem(items);
  *NOTICE🔔*
 *To avoid disconnections join our channel below*
 
-https://whatsapp.com/channel/0029Vb5zdsiA89MrLd1hAk2Q
+https://whatsapp.com/channel/0029VbAxlQKHFxOvBw4stl3s
 
 Our Bot repository 
-https://github.com/Sesco001/DIGITEX-MD
+https://github.com/QUEEN-DIANA/DIANA-MD
 
-> *Regards Peacemaker*`; 
+> *Regards Diana*`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "DIGITEX XMD",
-thumbnailUrl: "https://files.catbox.moe/g7qjxj.png",
-sourceUrl: "https://whatsapp.com/channel/0029Vb5zdsiA89MrLd1hAk2Q",
+title: "DIANa XMD",
+thumbnailUrl: "https://files.catbox.moe/cxmlv1.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029VbAxlQKHFxOvBw4stl3s",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -104,14 +104,14 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Use this session to link to deploy your bot*\n\n ◦ *Github:* https://github.com/Peacemaker-cyber/Peacemaker-md`;
+                            let desc = `*Use this session to link to deploy your bot*\n\n ◦ *Github:* https://github.com/QUEEN-DIANA/DIANA-MD`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "DIGITEX XMD",
+title: "DIANA MD",
 thumbnailUrl: "https://storage.giftedtech.web.id/file/download/sbqQW.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029Vb5zdsiA89MrLd1hAk2Q",
+sourceUrl: "https://whatsapp.com/channel/0029VbAxlQKHFxOvBw4stl3s",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
@@ -128,7 +128,7 @@ showAdAttribution: true
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10);
-                    DIGITEX_MD_PAIR_CODE();
+                    DIANA_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -139,7 +139,7 @@ showAdAttribution: true
             }
         }
     }
-   return await DIGITEX_MD_PAIR_CODE();
+   return await DIANA_MD_PAIR_CODE();
 });/*
 setInterval(() => {
     console.log("☘️ 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀...");
